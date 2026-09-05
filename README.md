@@ -58,6 +58,4 @@ Modifies the original spherical colloid structure to generate a **surface-roughe
 
 The script introduces surface topographical heterogeneity into the initially smooth colloidal particle.
 
-## Notes
-
-These scripts were developed for constructing urease-functionalized colloidal models with different surface organizations and geometries, including random, patchy, Janus, rough, and locally confined surface configurations.
+Analysis scripts are available upon reasonable request.
