@@ -58,49 +58,6 @@ Modifies the original spherical colloid structure to generate a **surface-roughe
 
 The script introduces surface topographical heterogeneity into the initially smooth colloidal particle.
 
----
-
-### `modify-colloid-hollow.py`
-
-Generates a modified colloidal structure containing local hollow or concave surface features.
-
-This script can be used to construct geometrically heterogeneous surfaces for studying the effect of local surface confinement on enzyme immobilization and spatial organization.
-
----
-
-## Typical Workflow
-
-A typical structure-generation workflow is:
-
-1. Generate or prepare the urease model using `Urease-CG-generate.py`.
-2. Construct the initial multi-enzyme simulation system using `Urease-AA-generate.py`.
-3. Use `colloid-structure.data` as the base colloidal particle structure.
-4. Generate the desired surface organization:
-   - random distribution: `generate-random.py`
-   - heterogeneous/patchy distribution: `generate-nbinomial.py`
-   - Janus distribution: `generate-Janus.py`
-5. Introduce surface geometrical heterogeneity when needed using:
-   - `modify-colloid.py`
-   - `modify-colloid-hollow.py`
-
-## Requirements
-
-The scripts are written in Python. Depending on the specific script, common scientific Python packages such as the following may be required:
-
-- NumPy
-- SciPy
-- MDAnalysis or related molecular-structure libraries
-
-Please check the individual scripts for exact dependencies.
-
-## Structural Input
-
-The coarse-grained urease model is based on the experimentally resolved urease structure:
-
-- **PDB ID: 6ZJA**
-
-The corresponding PDB structure should be downloaded and placed in the appropriate working directory before running `Urease-CG-generate.py`.
-
 ## Notes
 
 These scripts were developed for constructing urease-functionalized colloidal models with different surface organizations and geometries, including random, patchy, Janus, rough, and locally confined surface configurations.
