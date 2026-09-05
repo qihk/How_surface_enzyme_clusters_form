@@ -52,7 +52,7 @@ Catalytic or reactive sites are restricted to one hemisphere of the particle, wh
 
 ---
 
-### `modify-colloid.py`
+### `modify-colloid.py` and `modify-colloid-hollow.py`
 
 Modifies the original spherical colloid structure to generate a **surface-roughened colloidal particle model**.
 
